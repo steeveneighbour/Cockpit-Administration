@@ -16,6 +16,11 @@ Le parcours interactif CP-001 reste proposé plus bas sur cette même page. Il s
 
 > Enlever ce qui encombre. Relier ce qui est dispersé. Montrer ce qui contraint. Laisser l'humain arbitrer.
 
+## Essayer l'orchestration documentaire — maintenant
+
+**[Ouvrir l'essai interactif : déposer, contrôler, qualifier et préparer une action](exemples/orchestration/essayer.html)**. Aucun compte ni installation : exemples fictifs, glisser-déposer d'un fichier local, contrôles du format et de l'empreinte SHA-256, puis proposition et action fictive après validation.
+
+Cet essai est une **simulation indépendante dans le navigateur**, sans transfert de document et sans exploitation des fichiers côté serveur. Il **ne remplace pas** l'application Windows Cockpit Administration. Le téléchargement d'une version exécutable distincte et isolée reste à préparer et à vérifier avant diffusion publique.
 ## Démonstrateur concret : CP-001
 
 **[Explorer le parcours illustratif (HTML autonome)](exemples/cp001/parcours.html)** — [Données, tests et limites](exemples/cp001/README.md).

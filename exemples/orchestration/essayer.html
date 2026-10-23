@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Essayer l'orchestration documentaire — Cockpit Administration</title>
+  <link rel="stylesheet" href="essayer.css">
+</head>
+<body>
+<header class="masthead">
+ <div class="mast-inner"><a class="brand" href="../cp001/parcours.html"><span class="mark" aria-hidden="true">▥</span><span><strong>Cockpit Administration</strong><small>Une application de pilotage pour les agents publics</small></span></a><a class="nav-link" href="../cp001/parcours.html">Voir la véritable interface ↗</a></div>
+</header>
+<main>
+ <section class="intro" aria-labelledby="page-title">
+  <p class="eyebrow">Essai interactif · Parcours documentaire · Sans compte</p>
+  <h1 id="page-title">Un document arrive.<br><span>Cockpit prépare la suite.</span></h1>
+  <p class="lead">Essayez le geste au cœur de Cockpit : <strong>glisser-déposer un document</strong>, le contrôler, comprendre ce qu’il déclenche, puis décider de la suite. Vous ne ressaisissez pas les mêmes informations dans plusieurs écrans.</p>
+  <div class="notes"><span>✓ Traitement dans ce navigateur</span><span>✓ Aucun transfert de fichier</span><span>✓ Aucune décision réelle</span></div>
+  <p class="disclaimer"><strong>À propos de cet essai :</strong> cette page est une <strong>simulation interactive autonome</strong> du parcours d'orchestration, pas l'application Windows complète. Les actions créées ici sont fictives et disparaissent à la fermeture de la page. Le logiciel réel conserve ses propres contrôles, droits et validations.</p>
+ </section>
+ <div class="steps" aria-label="Étapes de l'essai"><span class="step current" id="st-1">1 · Déposer</span><span class="step" id="st-2">2 · Contrôler</span><span class="step" id="st-3">3 · Valider</span><span class="step" id="st-4">4 · Préparer</span></div>
+ <div class="columns">
+ <section class="panel" aria-labelledby="deposit-title">
+  <div class="section-head"><span class="index">01</span><div><h2 id="deposit-title">Déposez un document</h2><p>Avec une souris, un fichier fictif ou le clavier.</p></div></div>
+  <div class="drop" id="drop" role="group" aria-labelledby="drop-label">
+    <div class="drop-icon" aria-hidden="true">⇩</div><h3 id="drop-label">Glissez un fichier ici</h3>
+    <p>ou utilisez le sélecteur. PDF, DOCX, ODT, EML, TXT ou CSV (8 Mo maximum)</p>
+    <button class="file-button" type="button" id="pick">Choisir un fichier</button><input id="file" type="file" accept=".eml,.txt,.csv,.pdf,.docx,.odt">
+  </div>
+  <p class="subhead">Pour tester immédiatement, sans fichier personnel :</p>
+  <div class="samples"><button id="sample-meeting" type="button" class="sample">✉ Courriel de réunion fictif</button><button id="sample-decision" type="button" class="sample">▤ Notification fictive</button></div>
+  <p class="hint">N’utilisez pas de document administratif confidentiel dans cet essai public. Les fichiers sélectionnés ne sont ni envoyés, ni enregistrés.</p>
+  <div role="status" aria-live="polite" id="status" class="status">Déposez un fichier ou choisissez un exemple pour commencer.</div>
+ </section>
+ <section class="panel" aria-labelledby="result-title">
+  <div class="section-head"><span class="index">02</span><div><h2 id="result-title">Cockpit examine l'entrée</h2><p>Contrôles locaux et proposition explicable.</p></div></div>
+  <div class="empty" id="empty">Aucun document analysé pour le moment.</div>
+  <div id="analysis" hidden>
+   <dl class="facts"><div><dt>Source</dt><dd id="fn"></dd></div><div><dt>Contrôle</dt><dd id="fmt"></dd></div><div><dt>Empreinte locale</dt><dd id="sha"></dd></div><div><dt>Nature suggérée</dt><dd><strong id="kind"></strong></dd></div></dl>
+   <div class="proposal"><h3>Ce que Cockpit propose</h3><p id="reason"></p><p class="meta" id="details"></p></div>
+   <div class="review"><label for="category">Corriger la nature si nécessaire</label><select id="category"><option value="meeting">Invitation à une réunion</option><option value="decision">Décision ou notification</option><option value="other">Autre document / à qualifier</option></select>
+    <label class="consent"><input type="checkbox" id="confirm"> Je vérifie cette proposition et confirme sa qualification.</label>
+    <button id="validate" class="primary" type="button" disabled>Valider la qualification</button>
+   </div>
+  </div>
+ </section>
+ </div>
+ <section class="panel final" aria-labelledby="after-title">
+  <div class="section-head"><span class="index">03</span><div><h2 id="after-title">Une conséquence visible, pas une saisie supplémentaire</h2><p>La proposition validée alimente le pilotage dans cette simulation.</p></div></div>
+  <div class="final-grid"><div><h3>Action préparée</h3><div class="draft" id="draft"><p>Validez d'abord un document. Aucune opération n'est lancée automatiquement.</p></div><button class="primary" type="button" id="apply" disabled>Préparer l'action fictive</button></div><div><h3>Vue Travail / Agenda</h3><ul id="actions" class="actions"><li class="muted" id="no-actions">Aucune action créée dans cet essai.</li></ul><button type="button" class="subtle" id="reset">Réinitialiser l'essai</button></div></div>
+ </section>
+ <section class="explain" aria-labelledby="explain-title"><p class="eyebrow">Le principe de Cockpit</p><h2 id="explain-title">Déposer → comprendre → proposer → valider → coordonner</h2>
+ <div class="explain-grid"><article><b>1. Un point d'entrée</b><p>Le logiciel Windows contrôle le fichier, calcule son empreinte et conserve une source traçable.</p></article><article><b>2. Des raccordements</b><p>Un courriel de réunion peut alimenter une préparation d'agenda ; une décision validée peut appeler un suivi.</p></article><article><b>3. Une intervention ciblée</b><p>Les tâches permises et contrôlées peuvent être automatisées ; les décisions, incertitudes et habilitations demeurent explicites.</p></article></div>
+ <p class="limit">Dans le vrai Cockpit, certaines analyses n'interviennent qu'après validation humaine et avec les autorisations requises. Le simple dépôt d'un PDF ne prouve pas que son contenu a été compris. Cette démonstration n'effectue ni extraction PDF/DOCX ni connexion aux modules Windows.</p>
+ </section>
+ <footer><a href="../cp001/parcours.html">← Présentation et captures réelles de Cockpit Administration</a><p>Démo sans serveur, sans stockage, sans téléversement et sans compte · Octobre 2026</p></footer>
+</main>
+<script src="essayer.js" defer></script>
+</body></html>
