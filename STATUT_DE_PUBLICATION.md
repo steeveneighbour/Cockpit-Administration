@@ -1,7 +1,7 @@
 # Statut de publication — Cockpit Administration
 
 **Date de référence : 23 octobre 2026**  
-**Nature de ce dossier : documentation de présentation uniquement.**
+**Nature de ce dépôt : documentation et exemple pédagogique CP-001 indépendant. Aucun code applicatif Cockpit.**
 
 | Élément | État |
 | --- | --- |
@@ -23,7 +23,7 @@ La diffusion d'un paquet ou d'un historique Git issu du dépôt privé est donc 
 
 ## Livrable effectivement partageable
 
-Les cinq documents du dossier vitrine seulement (README, FICHE_PROJET, STATUT_DE_PUBLICATION, CONTRIBUTING, SECURITY) dans un dépôt public neuf, si la présentation elle-même est validée. Ils ne contiennent pas de code applicatif ni de données métier réelles.
+Cinq documents de présentation et un exemple pédagogique CP-001 : page HTML autonome, deux CSV synthétiques, script Python et tests. Aucun de ces fichiers ne constitue une distribution du logiciel Cockpit. Aucun code métier privé ni donnée utilisateur réelle n est publié.
 
 ## Conditions d'ouverture du code
 

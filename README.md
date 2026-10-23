@@ -4,6 +4,11 @@
 
 > Enlever ce qui encombre. Relier ce qui est dispersé. Montrer ce qui contraint. Laisser l'humain arbitrer.
 
+## Démonstrateur concret : CP-001
+
+**[Explorer le parcours illustratif (HTML autonome)](exemples/cp001/parcours.html)** — [Données, tests et limites](exemples/cp001/README.md).
+
+48 inscriptions fictives, une jauge de 24 places pour 32 demandes, puis trois options d'arbitrage. Ouvrir le HTML après téléchargement du dossier pour l'essayer hors connexion. **Il s'agit d'un démonstrateur indépendant, pas de l'application Cockpit ni d'une capture de son interface.** Le logiciel reste privé.
 ## Pour qui ?
 
 Agents publics, secrétaires généraux, responsables de services, équipes de coordination, services supports et collectifs qui gèrent des échéances, dossiers, documents, projets, ressources et arbitrages. Le projet n'est rattaché à aucun ministère et n'a reçu aucune validation institutionnelle.
