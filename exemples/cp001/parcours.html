@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CP-001 — Parcours interactif illustratif</title>
+<title>Cockpit Administration — Interface réelle et démonstrateur CP-001</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#1d2939;background:#f4f6fa}
 *{box-sizing:border-box}body{margin:0}.top{background:#172f45;color:#fff;padding:36px max(22px,calc((100vw - 1030px)/2))}
@@ -26,9 +26,76 @@ main{max-width:1030px;margin:0 auto;padding:24px 18px 52px}h2{font-size:20px;mar
 .pill{font-size:12px;background:#e9edf3;border-radius:99px;padding:4px 9px;white-space:nowrap}.line{display:flex;justify-content:space-between;align-items:center;gap:10px}
 a{color:#125a83}code{background:#eef3f8;padding:2px 4px;border-radius:3px}@media(max-width:780px){.layout,.metrics{grid-template-columns:1fr}.top{padding:25px 19px}.metric strong{font-size:27px}}
 </style>
+<!-- COCKPIT-APP-CSS-START -->
+<style>
+
+/* Cockpit showcase: encapsulated to preserve the original interactive CP-001 */
+.cockpit-showcase{background:#0d1827;color:#e9f1fc;padding:36px max(19px,calc((100vw - 1130px)/2)) 48px;border-bottom:5px solid #3296d2}
+.cockpit-showcase *{box-sizing:border-box}
+.cockpit-showcase .cockpit-kicker{text-transform:uppercase;font-weight:750;letter-spacing:.1em;font-size:12px;color:#93c8ff;margin:0 0 11px}
+.cockpit-showcase h1{font-size:clamp(31px,4.4vw,51px);letter-spacing:-.035em;line-height:1.1;margin:0 0 14px;color:#fff;max-width:880px}
+.cockpit-showcase .cockpit-lead{font-size:17px;line-height:1.65;color:#c4d5e9;max-width:950px;margin:0 0 22px}
+.cockpit-showcase .cockpit-facts{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 23px}
+.cockpit-showcase .cockpit-facts span{border:1px solid #47617c;border-radius:8px;padding:6px 10px;font-size:12px;color:#c8d8e9}
+.cockpit-showcase .cockpit-figure{background:#142236;border:1px solid #3c526b;padding:10px;border-radius:16px;margin:0 0 16px}
+.cockpit-showcase .cockpit-figure a{display:block;outline-offset:4px}
+.cockpit-showcase .cockpit-figure img{width:100%;height:auto;display:block;border-radius:8px;background:#182331}
+.cockpit-showcase figcaption{margin-top:10px;color:#c6d4e3;line-height:1.5;font-size:13px}
+.cockpit-showcase .cockpit-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}
+.cockpit-showcase .cockpit-subtitle{font-size:22px;color:white;margin:30px 0 12px}
+.cockpit-showcase .cockpit-note{border-left:4px solid #77b6e9;background:#172a40;padding:14px 18px;border-radius:4px;line-height:1.65;font-size:14px;color:#d5e4f3;margin:20px 0}
+.cockpit-showcase .cockpit-link{display:inline-block;background:#d6ecff;color:#11344b;font-weight:750;padding:11px 17px;border-radius:8px;text-decoration:none;margin:6px 12px 0 0}
+.cockpit-showcase .cockpit-link:hover{background:white}
+.cockpit-showcase .cockpit-secondary{background:transparent;color:#d6ecff;border:1px solid #9ecdf2}
+@media(max-width:760px){.cockpit-showcase{padding:27px 16px}.cockpit-showcase .cockpit-gallery{grid-template-columns:1fr}.cockpit-showcase .cockpit-lead{font-size:15px}}
+
+</style>
+<!-- COCKPIT-APP-CSS-END -->
 </head>
 <body>
-<header class="top">
+
+<!-- COCKPIT-APP-SHOWCASE-START -->
+<section class="cockpit-showcase" aria-labelledby="cockpit-app-title">
+  <p class="cockpit-kicker">Cockpit Administration · Présentation du logiciel réel</p>
+  <h1 id="cockpit-app-title">Une application de pilotage conçue pour les agents publics</h1>
+  <p class="cockpit-lead">Retrouver les dossiers, organiser les actions, relier les documents, anticiper les contraintes et préparer les arbitrages. Voici des <strong>captures authentiques de Cockpit Administration</strong>, application Windows locale encore en développement.</p>
+  <div class="cockpit-facts" aria-label="Caractéristiques du prototype">
+    <span>Windows · .NET 10 · WPF</span><span>Utilisation locale</span><span>IA non obligatoire</span><span>Navigation modulaire</span><span>Décision humaine</span>
+  </div>
+  <figure class="cockpit-figure">
+    <a href="captures/01-accueil-navigation.webp" target="_blank" rel="noopener" aria-label="Agrandir la capture de l'accueil et de la navigation de Cockpit Administration">
+      <img src="captures/01-accueil-navigation.webp" alt="Capture réelle de Cockpit Administration : accueil par intentions avec rubriques de navigation ouvertes, analyses, travail, projets, finances, documents, contrats et maîtrise des risques." width="1916" height="1030" fetchpriority="high">
+    </a>
+    <figcaption><strong>Accueil et navigation.</strong> Les fonctions sont regroupées par rubriques indépendantes. Cliquez sur l’image pour l’agrandir.</figcaption>
+  </figure>
+  <h2 class="cockpit-subtitle">Plusieurs vues d'une même application</h2>
+  <div class="cockpit-gallery">
+    <figure class="cockpit-figure">
+      <a href="captures/02-accueil-actions.webp" target="_blank" rel="noopener" aria-label="Agrandir l'accueil de Cockpit Administration">
+        <img src="captures/02-accueil-actions.webp" alt="Accueil de Cockpit Administration montrant quatre entrées : Documents, Travail, Projets et Analyses, avec les situations nécessitant une intervention." width="1916" height="1032" loading="lazy">
+      </a>
+      <figcaption><strong>Partir de l'action.</strong> Accéder directement au bon outil ; consulter les indicateurs détaillés seulement si nécessaire.</figcaption>
+    </figure>
+    <figure class="cockpit-figure">
+      <a href="captures/03-referentiels-ressources.webp" target="_blank" rel="noopener" aria-label="Agrandir la navigation organisation et ressources">
+        <img src="captures/03-referentiels-ressources.webp" alt="Rubrique Organisation et ressources du logiciel : Mon temps, Organisations, Agents, Zones et affectations, Explorateur transversal." width="1916" height="1030" loading="lazy">
+      </a>
+      <figcaption><strong>Organisation et ressources.</strong> Agents, temps, organisations, affectations et explorateur transversal.</figcaption>
+    </figure>
+    <figure class="cockpit-figure">
+      <a href="captures/04-pilotage-travail.webp" target="_blank" rel="noopener" aria-label="Agrandir l'illustration de la vue pilotage du travail">
+        <img src="captures/04-pilotage-travail.webp" alt="Capture de la vue Pilotage du travail : kits opérationnels, agents et équipes, planification, chronologie et agenda avec exemples fictifs." width="1914" height="1028" loading="lazy">
+      </a>
+      <figcaption><strong>Pilotage du travail.</strong> Planification, équipes, dépendances et échéances dans un même espace. Les données présentées sont fictives et certaines qualifications restent à compléter.</figcaption>
+    </figure>
+  </div>
+  <aside class="cockpit-note" role="note"><strong>Transparence.</strong> Les images montrent le logiciel Windows, non une application web exécutée dans cette page. Le cas interactif CP-001 ci-dessous est un démonstrateur pédagogique distinct, avec des données entièrement fictives. Le code du logiciel reste privé pendant les vérifications de séparation public/privé et de publication. Le prototype n’est pas homologué pour la production administrative.</aside>
+  <a class="cockpit-link" href="#cockpit-demo-cp001">Essayer le cas pédagogique CP-001 ↓</a>
+  <a class="cockpit-link cockpit-secondary" href="../../README.md">Présentation du projet</a>
+</section>
+<!-- COCKPIT-APP-SHOWCASE-END -->
+
+<header class="top" id="cockpit-demo-cp001">
   <div class="eyebrow">CP-001 · Situation fictive · Démonstrateur local</div>
   <h1>Une jauge dépassée. Des options. Une décision humaine.</h1>
   <p>Explorez un cas de coordination administrative : des inscriptions à une journée de prévention, des capacités limitées, puis plusieurs manières d'organiser la suite.</p>

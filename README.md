@@ -1,5 +1,17 @@
 # Cockpit — Pilotage administratif transversal
 
+
+<!-- COCKPIT-PRESENTATION-START -->
+## Voir le véritable Cockpit Administration
+
+**[Découvrir les captures authentiques de l'application Windows](exemples/cp001/parcours.html)** — accueil, navigation progressive, organisation des ressources et pilotage du travail. Les captures proviennent d'une session de démonstration locale avec des données fictives ; elles ne constituent pas une application web.
+
+[![Capture authentique de Cockpit Administration : accueil et modules](exemples/cp001/captures/01-accueil-navigation.webp)](exemples/cp001/parcours.html)
+
+Le parcours interactif CP-001 reste proposé plus bas sur cette même page. Il s'agit d'une **illustration pédagogique autonome**, distincte de l'interface et du moteur du logiciel. Le code applicatif demeure privé pendant les vérifications de séparation technique et de droits.
+<!-- COCKPIT-PRESENTATION-END -->
+
+
 **Initiative logicielle indépendante, en développement.** Cockpit vise à réduire le travail administratif répétitif, à relier les informations dispersées et à préparer des décisions compréhensibles et vérifiables, au bénéfice des agents publics et de leurs collectifs.
 
 > Enlever ce qui encombre. Relier ce qui est dispersé. Montrer ce qui contraint. Laisser l'humain arbitrer.
